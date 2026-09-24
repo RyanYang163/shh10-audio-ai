@@ -1,0 +1,9 @@
+Package: shh10-audio-ai
+Version: 1.0.0
+Architecture: amd64
+Section: utils
+Priority: optional
+Maintainer: shh <surpasshither@outlook.com>
+Depends: python3 (>= 3.10), systemd
+Description: AI Audio Analyzer
+ Inspect audio files, detect silence, and convert between transcript and subtitle formats (LRC / SRT / VTT / TXT).

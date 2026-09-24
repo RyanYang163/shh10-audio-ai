@@ -1,0 +1,97 @@
+[zh-cn]
+name = "音频 AI 分析器"
+auth = "shh"
+descript = "分析 TNAS 上的音频文件并转成可用的文本素材。读取 WAV / FLAC / MP3 / OGG / M4A 文件头，得到时长、采样率与声道布局；把 WAV 解码为 PCM 后按能量与过零率检测静音与有声段落；生成波形峰值用于预览。支持转写文本与 LRC（歌词）、SRT、VTT、纯 TXT 之间互转，歌词模式自动合并短句，时间轴整体平移，可批量转换整个目录的字幕文件。全部处理在本机离线完成。管理员可选启用语音转写引擎（本机已安装的 faster-whisper 命令，或自行配置的远程接口），不启用也能正常使用。"
+release_note = "1. 首次发布。"
+important = "所有音频均在本机处理。只有在管理员主动配置了远程接口时才会联网做语音转写。"
+
+[zh-hk]
+name = "音訊 AI 分析器"
+auth = "shh"
+descript = "分析 TNAS 上的音訊檔案並轉成可用的文字素材。讀取 WAV / FLAC / MP3 / OGG / M4A 檔頭，取得時長、取樣率與聲道配置；把 WAV 解碼為 PCM 後依能量與過零率偵測靜音與有聲段落；產生波形峰值供預覽。支援轉寫文字與 LRC（歌詞）、SRT、VTT、純 TXT 之間互轉，歌詞模式自動合併短句，時間軸整體平移，可批次轉換整個目錄的字幕檔案。全部處理在本機離線完成。管理員可選啟用語音轉寫引擎（本機已安裝的 faster-whisper 命令，或自行設定的遠端介面），不啟用也能正常使用。"
+release_note = "1. 首次發佈。"
+important = "所有音訊均在本機處理。只有在管理員主動設定遠端介面時才會連網做語音轉寫。"
+
+[en-us]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[fr-fr]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[de-de]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[it-it]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[es-es]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[hu-hu]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[ja-jp]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[ko-kr]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[pl-pl]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[ru-ru]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[tr-tr]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
+
+[pt-pt]
+name = "AI Audio Analyzer"
+auth = "shh"
+descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
+release_note = "1. Initial release."
+important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
