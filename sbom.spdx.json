@@ -2,8 +2,8 @@
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "name": "shh10-audio-ai-1.0.1",
-  "documentNamespace": "https://github.com/RyanYang163/shh10-audio-ai/sbom/1.0.1",
+  "name": "shh10-audio-ai-1.0.012",
+  "documentNamespace": "https://github.com/RyanYang163/shh10-audio-ai/sbom/1.0.012",
   "creationInfo": {
     "created": "2026-09-23T00:00:00Z",
     "creators": [
@@ -15,7 +15,7 @@
     {
       "name": "shh10-audio-ai",
       "SPDXID": "SPDXRef-Package-shh10-audio-ai",
-      "versionInfo": "1.0.1",
+      "versionInfo": "1.0.012",
       "downloadLocation": "https://github.com/RyanYang163/shh10-audio-ai",
       "filesAnalyzed": true,
       "licenseConcluded": "MIT",
@@ -26,7 +26,7 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:github/RyanYang163/shh10-audio-ai@1.0.1"
+          "referenceLocator": "pkg:github/RyanYang163/shh10-audio-ai@1.0.012"
         }
       ]
     }

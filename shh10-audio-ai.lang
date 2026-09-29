@@ -2,96 +2,96 @@
 name = "音频 AI 分析器"
 auth = "shh"
 descript = "分析 TNAS 上的音频文件并转成可用的文本素材。读取 WAV / FLAC / MP3 / OGG / M4A 文件头，得到时长、采样率与声道布局；把 WAV 解码为 PCM 后按能量与过零率检测静音与有声段落；生成波形峰值用于预览。支持转写文本与 LRC（歌词）、SRT、VTT、纯 TXT 之间互转，歌词模式自动合并短句，时间轴整体平移，可批量转换整个目录的字幕文件。全部处理在本机离线完成。管理员可选启用语音转写引擎（本机已安装的 faster-whisper 命令，或自行配置的远程接口），不启用也能正常使用。"
-release_note = "1. 首次发布。"
+release_note = "1. 界面新增 14 种语言支持，首次打开跟随系统语言，也可在「设置」里手动切换。"
 important = "所有音频均在本机处理。只有在管理员主动配置了远程接口时才会联网做语音转写。"
 
 [zh-hk]
 name = "音訊 AI 分析器"
 auth = "shh"
 descript = "分析 TNAS 上的音訊檔案並轉成可用的文字素材。讀取 WAV / FLAC / MP3 / OGG / M4A 檔頭，取得時長、取樣率與聲道配置；把 WAV 解碼為 PCM 後依能量與過零率偵測靜音與有聲段落；產生波形峰值供預覽。支援轉寫文字與 LRC（歌詞）、SRT、VTT、純 TXT 之間互轉，歌詞模式自動合併短句，時間軸整體平移，可批次轉換整個目錄的字幕檔案。全部處理在本機離線完成。管理員可選啟用語音轉寫引擎（本機已安裝的 faster-whisper 命令，或自行設定的遠端介面），不啟用也能正常使用。"
-release_note = "1. 首次發佈。"
+release_note = "1. 介面新增 14 種語言支援，首次開啟跟隨系統語言，也可在「設定」裡手動切換。"
 important = "所有音訊均在本機處理。只有在管理員主動設定遠端介面時才會連網做語音轉寫。"
 
 [en-us]
 name = "AI Audio Analyzer"
 auth = "shh"
 descript = "Reads WAV / FLAC / MP3 / OGG / M4A files for duration, sample rate and channels, decodes WAV to PCM to detect silence and voice activity, and draws waveform peaks. Converts between transcript text and LRC lyrics, SRT, VTT and TXT, merges short lines in lyric mode, shifts cue timings and batch-converts subtitle folders. Fully local and offline. Speech-to-text can be enabled when a local faster-whisper command or a configured API endpoint is available."
-release_note = "1. Initial release."
+release_note = "1. The interface now supports 14 languages. It follows your system language on first open and can also be switched under Settings."
 important = "All audio is processed locally on your TNAS. Remote speech-to-text is only used if an administrator explicitly configures an API endpoint."
 
 [fr-fr]
 name = "Analyseur audio IA"
 auth = "shh"
 descript = "Analyse les fichiers audio du TNAS : en-têtes WAV / FLAC / MP3 / OGG / M4A pour la durée, la fréquence et les canaux ; décodage WAV en PCM pour repérer silences et passages parlés ; pics de forme d'onde. Convertit entre transcription, paroles LRC, SRT, VTT et TXT, fusionne les lignes courtes, décale les sous-titres, traite des dossiers entiers. Tout se fait hors ligne. La transcription vocale est optionnelle (faster-whisper local ou API) ; sans elle l'application reste utilisable."
-release_note = "1. Première version."
+release_note = "1. L'interface prend désormais en charge 14 langues. Elle suit la langue du système à la première ouverture et peut aussi être changée dans Réglages."
 important = "Tout l'audio est traité localement. La transcription à distance n'est utilisée que si un administrateur configure explicitement une API."
 
 [de-de]
 name = "KI-Audioanalysator"
 auth = "shh"
 descript = "Analysiert Audiodateien auf Ihrem TNAS: Kopfdaten von WAV / FLAC / MP3 / OGG / M4A für Dauer, Abtastrate und Kanäle; WAV zu PCM dekodiert, um Stille und Sprachpassagen zu finden; Wellenform-Spitzen. Wandelt zwischen Transkript, LRC-Liedtext, SRT, VTT und TXT um, führt kurze Zeilen zusammen, verschiebt Zeitachsen, verarbeitet ganze Ordner. Alles läuft offline. Die Spracherkennung ist optional (lokales faster-whisper oder API); ohne sie bleibt die App voll nutzbar."
-release_note = "1. Erstveröffentlichung."
+release_note = "1. Die Oberfläche unterstützt jetzt 14 Sprachen. Beim ersten Öffnen folgt sie der Systemsprache und lässt sich in den Einstellungen ändern."
 important = "Alle Audiodaten werden lokal verarbeitet. Eine entfernte Transkription findet nur statt, wenn ein Administrator ausdrücklich eine API einrichtet."
 
 [it-it]
 name = "Analizzatore audio IA"
 auth = "shh"
 descript = "Analizza i file audio del TNAS: intestazioni WAV / FLAC / MP3 / OGG / M4A per durata, frequenza e canali; decodifica WAV in PCM per trovare silenzi e tratti parlati; picchi della forma d'onda. Converte fra trascrizione, testo LRC, SRT, VTT e TXT, unisce le righe brevi, sposta i tempi dei sottotitoli, converte intere cartelle. Tutto in locale, offline. La trascrizione vocale è opzionale (faster-whisper locale o API); senza di essa l'app resta pienamente utilizzabile."
-release_note = "1. Prima versione."
+release_note = "1. L'interfaccia ora supporta 14 lingue. Alla prima apertura segue la lingua di sistema e può essere cambiata anche in Impostazioni."
 important = "Tutto l'audio è elaborato localmente. La trascrizione remota avviene solo se un amministratore configura esplicitamente un'API."
 
 [es-es]
 name = "Analizador de audio con IA"
 auth = "shh"
 descript = "Analiza los archivos de audio del TNAS: cabeceras WAV / FLAC / MP3 / OGG / M4A para duración, frecuencia y canales; descodifica WAV a PCM para detectar silencios y tramos con voz; picos de la onda. Convierte entre transcripción, letras LRC, SRT, VTT y TXT, fusiona líneas cortas, desplaza los tiempos y procesa carpetas completas. Todo en local, sin conexión. La transcripción de voz es opcional (faster-whisper local o API); sin ella la aplicación sigue siendo plenamente utilizable."
-release_note = "1. Primera versión."
+release_note = "1. La interfaz ahora admite 14 idiomas. La primera vez sigue el idioma del sistema y también puede cambiarse en Ajustes."
 important = "Todo el audio se procesa en local. Solo se usa transcripción remota si un administrador configura una API de forma explícita."
 
 [hu-hu]
 name = "AI hanganalizáló"
 auth = "shh"
 descript = "Elemzi a TNAS hangfájljait: WAV / FLAC / MP3 / OGG / M4A fejlécek (hossz, mintavétel, csatornák); a WAV-ot PCM-mé alakítva csendet és beszédszakaszokat keres; hullámforma-csúcsokat rajzol. Átalakít átirat, LRC, SRT, VTT és TXT között, összevonja a rövid sorokat, eltolja az idővonalat, mappákat dolgoz fel. Minden offline, helyben történik. A beszédfelismerés opcionális (helyi faster-whisper vagy API); nélküle is teljesen használható."
-release_note = "1. Első kiadás."
+release_note = "1. A felület mostantól 14 nyelvet támogat. Első megnyitáskor a rendszer nyelvét követi, és a Beállításokban kézzel is átváltható."
 important = "Minden hang helyben kerül feldolgozásra. Távoli átírás csak akkor történik, ha a rendszergazda kifejezetten beállít egy API-t."
 
 [ja-jp]
 name = "音声AIアナライザー"
 auth = "shh"
 descript = "TNAS 上の音声ファイルを解析します。WAV / FLAC / MP3 / OGG / M4A のヘッダーから長さ・サンプルレート・チャンネルを取得し、WAV を PCM にデコードして無音区間と発話区間を検出、波形ピークを描画します。文字起こしと LRC（歌詞）・SRT・VTT・TXT の相互変換、歌詞モードでの短い行の結合、タイムラインの一括移動、フォルダー単位の字幕変換に対応。処理はすべて本機でオフライン実行。音声認識は任意で有効化できます（本機の faster-whisper または API）。有効にしなくても使えます。"
-release_note = "1. 初回リリース。"
+release_note = "1. 表示言語が 14 言語に対応しました。初回はシステムの言語に従い、「設定」から手動で切り替えることもできます。"
 important = "音声はすべて本機で処理されます。リモートでの文字起こしは、管理者が API を明示的に設定した場合にのみ行われます。"
 
 [ko-kr]
 name = "오디오 AI 분석기"
 auth = "shh"
 descript = "TNAS의 오디오 파일을 분석합니다. WAV / FLAC / MP3 / OGG / M4A 헤더에서 길이, 샘플레이트, 채널을 읽고, WAV를 PCM으로 디코딩해 무음과 발화 구간을 찾아내며 파형 피크를 그립니다. 전사문과 LRC(가사), SRT, VTT, TXT 상호 변환, 가사 모드의 짧은 줄 합치기, 타임라인 일괄 이동, 폴더 단위 자막 변환을 지원합니다. 모든 처리는 본체에서 오프라인으로 끝납니다. 음성 인식은 선택 사항이며(본체 faster-whisper 또는 API), 켜지 않아도 정상 사용할 수 있습니다."
-release_note = "1. 최초 릴리스."
+release_note = "1. 인터페이스가 14개 언어를 지원합니다. 처음 열 때 시스템 언어를 따르며, 설정에서 직접 바꿀 수도 있습니다."
 important = "모든 오디오는 본체에서 처리됩니다. 원격 전사는 관리자가 API를 직접 설정한 경우에만 사용됩니다."
 
 [pl-pl]
 name = "Analizator audio AI"
 auth = "shh"
 descript = "Analizuje pliki audio na TNAS: nagłówki WAV / FLAC / MP3 / OGG / M4A dają czas, częstotliwość i kanały; dekodowanie WAV do PCM wykrywa ciszę i fragmenty mowy; rysowane są szczyty przebiegu. Konwertuje między transkrypcją, LRC, SRT, VTT i TXT, scala krótkie wiersze, przesuwa czasy i przetwarza całe foldery. Wszystko lokalnie, bez internetu. Rozpoznawanie mowy jest opcjonalne (lokalny faster-whisper lub API); bez niego aplikacja działa w pełni."
-release_note = "1. Pierwsze wydanie."
+release_note = "1. Interfejs obsługuje teraz 14 języków. Przy pierwszym otwarciu jest zgodny z językiem systemu, a zmienić go można także w Ustawieniach."
 important = "Całe audio jest przetwarzane lokalnie. Transkrypcja zdalna jest używana tylko wtedy, gdy administrator wyraźnie skonfiguruje interfejs API."
 
 [ru-ru]
 name = "ИИ-анализатор аудио"
 auth = "shh"
 descript = "Анализирует аудиофайлы на TNAS: заголовки WAV / FLAC / MP3 / OGG / M4A дают длительность, частоту и каналы; декодирование WAV в PCM находит тишину и участки речи; строятся пики осциллограммы. Переводит между расшифровкой, LRC, SRT, VTT и TXT, объединяет короткие строки, сдвигает тайминг, обрабатывает папки целиком. Всё локально, без сети. Распознавание речи необязательно (локальный faster-whisper или API); без него приложение полностью работоспособно."
-release_note = "1. Первый выпуск."
+release_note = "1. Интерфейс теперь поддерживает 14 языков. При первом открытии он следует языку системы, а переключить его можно и в настройках."
 important = "Всё аудио обрабатывается локально. Удалённая расшифровка используется только если администратор явно настроил API."
 
 [tr-tr]
 name = "Yapay zekâ ses çözümleyici"
 auth = "shh"
 descript = "TNAS cihazınızdaki ses dosyalarını çözümler: WAV / FLAC / MP3 / OGG / M4A başlıklarından süre, örnekleme hızı ve kanallar; WAV'ı PCM'e çözerek sessiz ve konuşmalı bölümler; dalga biçimi tepeleri. Metin dökümü ile LRC, SRT, VTT ve TXT arasında dönüştürür, kısa satırları birleştirir, zaman eksenini kaydırır, klasörleri toplu işler. Her şey cihazda, çevrimdışı. Konuşma çözümleme isteğe bağlıdır (yerel faster-whisper veya API); kapalıyken de uygulama tam çalışır."
-release_note = "1. İlk sürüm."
+release_note = "1. Arayüz artık 14 dili destekliyor. İlk açılışta sistem dilini izler, Ayarlar'dan elle de değiştirilebilir."
 important = "Tüm ses cihazda işlenir. Uzak konuşma çözümleme yalnızca yönetici açıkça bir API yapılandırırsa kullanılır."
 
 [pt-pt]
 name = "Analisador de áudio com IA"
 auth = "shh"
 descript = "Analisa os ficheiros de áudio do TNAS: cabeçalhos WAV / FLAC / MP3 / OGG / M4A para duração, taxa de amostragem e canais; descodificação WAV para PCM para detetar silêncios e trechos de fala; picos da forma de onda. Converte entre transcrição, letras LRC, SRT, VTT e TXT, junta linhas curtas, desloca as legendas e processa pastas inteiras. Tudo localmente, sem rede. A transcrição de voz é opcional (faster-whisper local ou API); sem ela a aplicação continua totalmente utilizável."
-release_note = "1. Primeira edição."
+release_note = "1. A interface passa a suportar 14 idiomas. Na primeira abertura segue o idioma do sistema e também pode ser alterada nas Definições."
 important = "Todo o áudio é processado localmente. A transcrição remota só é usada se o administrador configurar explicitamente uma API."
