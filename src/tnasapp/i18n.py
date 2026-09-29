@@ -102,6 +102,21 @@ def render(template, args=None):
         return text
 
 
+# 应用自己的词表（由 App 在构建时 register 进来）。与前端的分法一致：
+# 框架词条在 i18n_msgs.py，应用词条在各应用自己的 src/app/i18n_msgs.py。
+_APP_MESSAGES = {}
+
+
+def register(messages):
+    """挂上应用级词表。``messages`` = ``{语言码: {中文原文: 译文}}``，与框架同构。
+
+    应用自己的文案不该塞进框架词表（那会让 10 个应用背同一份），
+    也不该各自造一套取词逻辑。``tr`` 查表的顺序是**应用优先、框架兜底**。
+    """
+    if messages:
+        _APP_MESSAGES.update(messages)
+
+
 def tr(key, lang=DEFAULT, args=None):
     """取词。查不到返回中文原文（优雅降级，绝不留空）。"""
     if not key:
@@ -109,13 +124,22 @@ def tr(key, lang=DEFAULT, args=None):
     code = normalize(lang) or DEFAULT
     if code == DEFAULT:
         return render(key, args)
-    from .i18n_msgs import MESSAGES          # 延迟导入：语言包体积大，且便于单独替换
-    table = MESSAGES.get(code)
-    if table:
-        hit = table.get(key)
-        if hit is not None:
-            return render(hit, args)
-    return render(key, args)
+    # 回退链：目标语言 → en-us → 中文原文。
+    # 回退到英文而不是直接回中文：没翻到的词若回中文，非中文用户会在整屏英文里
+    # 突然看到一句中文，比全英文更糟。zh-hk 例外 —— 繁体读者看简体远比看英文顺。
+    order = ["zh-hk"] if code == "zh-hk" else [code, "en-us"]
+    hit = None
+    for step in order:
+        table = _APP_MESSAGES.get(step)
+        if table and table.get(key) is not None:
+            hit = table[key]
+            break
+        from .i18n_msgs import MESSAGES      # 延迟导入：语言包体积大，且便于单独替换
+        table = MESSAGES.get(step)
+        if table and table.get(key) is not None:
+            hit = table[key]
+            break
+    return render(key, args) if hit is None else render(hit, args)
 
 
 def _check():
@@ -126,6 +150,17 @@ def _check():
     """
     from .i18n_msgs import MESSAGES
     problems = []
+    if _APP_MESSAGES:
+        # 应用词表逐套自检（键集与占位符）
+        for code in LANGS:
+            if code == DEFAULT:
+                continue
+        expect_app = set(_APP_MESSAGES.get("en-us", {}))
+        for code, table in sorted(_APP_MESSAGES.items()):
+            miss = expect_app - set(table)
+            if miss:
+                problems.append("[应用/%s] 缺 %d 个键：%s"
+                                % (code, len(miss), "、".join(sorted(miss)[:3])))
     expect = set(MESSAGES.get("en-us", {}))
     placeholder = re.compile(r"%[sdifxXrg%]|%\((\w+)\)[sdifxrg]")
     for code in LANGS:

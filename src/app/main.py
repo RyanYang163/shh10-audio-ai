@@ -30,7 +30,7 @@ from tnasapp import fsapi, server as srv
 from . import audiometa, engines, pcm, subtitles
 
 APP_ID = "shh10-audio-ai"
-APP_VERSION = "1.0.012"
+APP_VERSION = "1.0.025"
 TITLE = "AI Audio Analyzer"
 
 #: 扫描时递归的最大深度，防止误选根目录后无限下钻

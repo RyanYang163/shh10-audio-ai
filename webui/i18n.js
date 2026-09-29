@@ -92,13 +92,29 @@ const I18N = (function () {
   // 这条快路径把绝大多数动态数据（文件名、数字、SVG 标记）挡在查表之前。
   const CJK = /[㐀-䶿一-鿿豈-﫿]/;
 
+  /**
+   * 回退链：目标语言 → en-us → 中文原文。
+   *
+   * 为什么要回退到英文而不是直接回中文：没翻到的词若回中文，非中文用户会在
+   * 一整屏英文里突然看到一句中文，比全英文更糟。回退到英文则至少是「同一门语言」，
+   * 未完成的翻译是个**受控的降级**，而不是破洞。
+   *
+   * ``zh-hk`` 例外：它缺词时回中文原文 —— 繁体读者看简体远比看英文顺。
+   */
+  function lookupOrder(code) {
+    return code === 'zh-hk' ? ['zh-hk'] : [code, 'en-us'];
+  }
+
   /** 取值。查不到返回中文原文。 */
   function t(key, params) {
     if (typeof key !== 'string' || !key) return key;
     if (!CJK.test(key)) return key;
     if (lang === DEFAULT_LANG) return fill(key, params);
-    const hit = lookup(key, lang);
-    return fill(hit === null ? key : hit, params);
+    for (const code of lookupOrder(lang)) {
+      const hit = lookup(key, code);
+      if (hit !== null) return fill(hit, params);
+    }
+    return fill(key, params);
   }
 
   /** 把静态 DOM 上的 data-i18n* 套用一遍（HTML 里的中文就是天然的中文词典） */

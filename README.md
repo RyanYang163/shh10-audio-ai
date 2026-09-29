@@ -1,13 +1,13 @@
 # AI Audio Analyzer（音频 AI 分析器）
 
-> TOS 7 Deb 单包应用 · WebUI 内嵌（iframe）· 版本 **1.0.012**
+> TOS 7 Deb 单包应用 · WebUI 内嵌（iframe）· 版本 **1.0.025**
 
 | 项 | 值 |
 |---|---|
 | 应用 ID | `shh10-audio-ai` |
 | 包类型 | Deb 单包（`application_type: "deb"`） |
 | 打开方式 | WebUI 内嵌（`type: "iframe"`，`path: "/shh10-audio-ai/"`） |
-| 版本 | 1.0.012 |
+| 版本 | 1.0.025 |
 | 分类 | `Audio_Video_Entertainment`, `Artificial_Intelligence` |
 | 发布者 | shh |
 | 开发者仓库 | <https://github.com/RyanYang163/shh10-audio-ai> |
